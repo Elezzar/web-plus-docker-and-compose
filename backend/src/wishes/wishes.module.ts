@@ -18,7 +18,7 @@ export class WishesModule {
   constructor(private readonly configService: ConfigService) {
     const entities = this.configService.get<string[]>('database.entities');
     if (!Array.isArray(entities) || !entities.includes(Wish.name)) {
-      console.error('Ошибка в конфигурации entities');
+      console.error('Ошибка в конфигурации entities wishes module');
     }
   }
 }

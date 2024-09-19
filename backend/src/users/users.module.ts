@@ -25,7 +25,7 @@ export class UsersModule implements OnModuleInit {
     const entities = this.configService.get<string[]>('database.entities');
 
     if (!Array.isArray(entities) || !entities.includes(User.name)) {
-      console.error('Ошибка в конфигурации entities');
+      console.error('Ошибка в конфигурации entities user module');
     }
   }
 }
